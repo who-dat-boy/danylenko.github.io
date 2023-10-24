@@ -1,0 +1,81 @@
+/* Загальні стилі для контейнера */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Стилі для бокових меню */
+.sidebar {
+    flex: 0 0 20%; /* Ширина бокових меню */
+}
+
+body {
+    padding: 10px;
+}
+
+/* Стилі для основного контенту */
+main {
+    flex: 0 0 60%; /* Ширина основного контенту */
+}
+
+/* Стилі для категорій новин */
+.category {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #333;
+}
+
+.category a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стилі для блоків новин */
+.news {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Зміна стилів пунктів меню при наведенні курсору */
+.category:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для рядка пошуку */
+.search {
+    width: 100%;
+    padding: 10px;
+    margin: -10px;
+    margin-bottom: 10px;
+}
+
+.news img {
+    width: 200px;   /* Задаємо ширину 200px */
+    height: 200px;  /* Задаємо висоту 200px */
+    object-fit: cover;  /* Забезпечує збереження співвідношення сторін і обрізає зображення */
+    overflow: hidden;   /* Обрізає зайву частину зображення */
+}
+
+/* Стилі для рекламних блоків */
+.ad-block {
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ad-block img {
+    max-width: 100%; /* Забезпечує, що зображення буде адаптивним до розміру блока */
+}
+
+.ad-block {
+    padding: 10px;
+}
